@@ -1,0 +1,150 @@
+.phandau{
+    grid-template-columns: 20% 0% 20%;
+    background-color: #f63f2d;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+nav #menu111 li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 50px;
+}
+#menu111{
+    display: flex;
+}
+nav #menu111 li:hover a{
+    color: blue;
+}
+#menu2{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(210, 210, 210);
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+}
+nav #menu222 li a{
+    color: black;
+    text-decoration: none;
+
+    padding: 8px 80px;
+}
+nav #menu222 li:hover a{
+    color: blue;
+}
+#menu222{
+    display: flex;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 100%;
+    gap: 10px;
+}
+.a1 {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: pink;
+}
+.a1:hover{
+    border: 1px solid #a5a3a3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.luot{
+    font-size: 13px;
+    color: gray;
+    float: right;
+}
+.tien{
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.gia{
+
+    margin-left: 5px;
+    font-size: 20px;
+    color: red;
+}
+.a1 p{
+    
+    margin-left: 5px;
+}
+.nd2{
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    width: 100%;
+}
+
+.logo1{
+    margin-left: 50px;
+}
+.tim{
+    margin-right: 50px;
+}
+.footer1{ 
+    height: 150px;
+    background-color: #f63f2d;
+    margin-top: 20px;
+}
+.footer1 > p {
+    margin-top: 20px;
+}
+#icon {
+    display: none;
+    padding: 10px;
+    text-align: right;
+    font-size: 50px;
+    cursor: pointer;
+}
+.banner1{
+    width: 100%;
+}
+/* Tablet */
+@media screen and (max-width: 1024px){
+    #menu111{
+        flex-direction: column;
+        text-align: center;
+    }
+       .container{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        }
+        .footer1{
+            display: block;
+        }
+        .footer1 > p{
+        font-size: 14px;
+        }
+        #icon{
+            text-align: right;
+            display: block;
+        }
+        nav{
+            display: none;
+        }
+}
+/* Mobile */
+@media screen and (max-width: 700px) {
+    .container{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    .logo1{
+        margin-left: 10px;
+        width: 40px;
+    }
+}
